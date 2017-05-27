@@ -1,0 +1,75 @@
+/**
+ * Adapted from https://codepen.io/lesbaa/pen/XbBOXy (Les)
+ */
+
+.group {
+  position: relative;
+  display: inline-block;
+  line-height: 16px;
+}
+  
+.bigSquare {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transform-origin: bottom left;
+  animation: bigSquareShrink 1s linear infinite;
+}
+  
+.square {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  
+  &.first {
+    left: 0px;
+    top: 20px;
+  }
+
+  &.second {
+    left: 20px;
+    top: 20px;
+    animation: drop2 1s linear infinite;
+  }
+    
+  &.third {
+    left: 0px;
+    top: 0px;
+    animation: drop3 1s linear infinite;
+  }
+    
+  &.fourth {
+    left: 20px;
+    top: 0px;
+    animation: drop4 1s linear infinite;
+  }
+}
+  
+@keyframes bigSquareShrink {
+  0% { transform: scale(1); }
+  90% { transform: scale(1); }
+  100% { transform: scale(0.5); }
+}
+  
+@keyframes drop2 {
+  0% { transform: translateY(-50px); }
+  25% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+    
+@keyframes drop3 {
+  0% { transform: translateY(-50px); }
+  50% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+ 
+@keyframes drop4 {
+  0% { transform: translateY(-50px); }
+  75% {transform: translate(0); }
+  100% { transform: translate(0); }
+}
+  
+

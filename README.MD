@@ -5,7 +5,7 @@
 To install this library, run:
 
 ```bash
-$ npm install angular-loaders --save
+$ npm install angular2-loaders --save
 ```
 
 ## Consuming your library
@@ -13,7 +13,7 @@ $ npm install angular-loaders --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install angular-loaders
+$ npm install angular2-loaders
 ```
 
 and then from your Angular `AppModule`:

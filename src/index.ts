@@ -1,35 +1,26 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SampleComponent } from './sample.component';
-import { SampleDirective } from './sample.directive';
-import { SamplePipe } from './sample.pipe';
-import { SampleService } from './sample.service';
 
-export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
+import { SpringLoaderComponent } from './spring-loader/spring-loader.component';
+import { Squareception } from './squareception/squareception.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    SpringLoaderComponent,
+    Squareception
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    SpringLoaderComponent,
+    Squareception
   ]
 })
-export class SampleModule {
+export class AngularLoaders {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
-      providers: [SampleService]
+      ngModule: AngularLoaders
     };
   }
 }
