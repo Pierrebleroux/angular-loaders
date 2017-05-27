@@ -1,0 +1,26 @@
+{
+  "name": "angular-loaders",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pierrebleroux/angular-loaders"
+  },
+  "author": {
+    "name": "Pierre Bernard le Roux",
+    "email": "pierrebleroux@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pierrebleroux/angular-loaders/issues"
+  },
+  "module": "angular-loaders.js",
+  "typings": "angular-loaders.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
